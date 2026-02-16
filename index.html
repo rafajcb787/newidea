@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GolfPR — Discover & Host Golf Tournaments Across Puerto Rico</title>
+    <meta name="description" content="Discover and post golf tournaments across Puerto Rico with GolfPR, the island's premier tournament board." />
+    <meta property="og:title" content="GolfPR — Puerto Rico's Premier Golf Tournament Hub" />
+    <meta property="og:description" content="Browse upcoming golf tournaments and publish your event in minutes." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1592919505780-303950717480?auto=format&fit=crop&w=1200&q=80" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain-overlay" aria-hidden="true"></div>
+    <header class="site-header" id="siteHeader">
+      <nav class="navbar container">
+        <a href="index.html" class="logo" aria-label="GolfPR home">Golf<span>PR</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+        <div class="nav-links" id="desktopNav">
+          <a href="#tournaments">Tournaments</a>
+          <a href="post.html">Post a Tournament</a>
+          <a href="about.html">About</a>
+        </div>
+      </nav>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#tournaments">Tournaments</a>
+        <a href="post.html">Post a Tournament</a>
+        <a href="about.html">About</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-slideshow" id="heroSlideshow"></div>
+        <div class="hero-content container fade-in-up">
+          <h1>Discover &amp; Host Golf Tournaments Across Puerto Rico</h1>
+          <p>A curated and elegant events board for players, organizers, and sponsors.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#tournaments">Browse Tournaments</a>
+            <a class="btn btn-outline" href="post.html">Post a Tournament</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="tournaments">
+        <div class="section-head">
+          <h2>Upcoming Tournaments</h2>
+          <button class="filter-toggle" id="filterToggle">Filters</button>
+        </div>
+        <div class="filter-bar" id="filterBar">
+          <label>
+            Date Range
+            <select id="dateFilter">
+              <option value="all">All Dates</option>
+              <option value="7">Next 7 days</option>
+              <option value="30">Next 30 days</option>
+              <option value="90">Next 90 days</option>
+            </select>
+          </label>
+          <label>
+            Region
+            <select id="regionFilter">
+              <option value="all">All Regions</option>
+              <option value="North">North</option>
+              <option value="South">South</option>
+              <option value="East">East</option>
+              <option value="West">West</option>
+              <option value="Metro">Metro</option>
+            </select>
+          </label>
+          <label>
+            Type
+            <select id="typeFilter">
+              <option value="all">All Types</option>
+              <option value="charity">Charity</option>
+              <option value="corporate">Corporate</option>
+              <option value="open">Open</option>
+              <option value="invitational">Invitational</option>
+            </select>
+          </label>
+        </div>
+        <div class="cards-grid" id="tournamentsGrid"></div>
+      </section>
+
+      <section class="section featured">
+        <div class="container">
+          <h2>Featured Courses</h2>
+          <div class="course-scroll" id="featuredCourses"></div>
+        </div>
+      </section>
+
+      <section class="cta-banner container fade-in-up">
+        <p>Want to host your tournament here? It takes less than 2 minutes.</p>
+        <a class="btn btn-gold" href="post.html">Submit Tournament</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span id="year"></span> GolfPR</div>
+    </footer>
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+window.GOLF_DATA = {
+  heroImages: [
+    'https://images.unsplash.com/photo-1592919505780-303950717480?auto=format&fit=crop&w=2000&q=80',
+    'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=2000&q=80',
+    'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=2000&q=80'
+  ],
+  courses: [
+    'TPC Dorado Beach',
+    'Royal Isabella',
+    'Coco Beach Golf Club',
+    'Wyndham Grand Rio Mar',
+    'Bahia Beach Resort & Golf Club',
+    'Palmas Athletic Club'
+  ],
+  featuredCourses: [
+    { name: 'TPC Dorado Beach', image: 'https://images.unsplash.com/photo-1601055903647-ddf1ee9701b7?auto=format&fit=crop&w=1200&q=80' },
+    { name: 'Royal Isabella', image: 'https://images.unsplash.com/photo-1526232373132-0e4ee4ea727a?auto=format&fit=crop&w=1200&q=80' },
+    { name: 'Coco Beach Golf Club', image: 'https://images.unsplash.com/photo-1618694781940-94f33f3d63e2?auto=format&fit=crop&w=1200&q=80' },
+    { name: 'Wyndham Grand Rio Mar', image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80' },
+    { name: 'Bahia Beach Resort', image: 'https://images.unsplash.com/photo-1500930287596-c1ecaa373bb2?auto=format&fit=crop&w=1200&q=80' }
+  ],
+  tournaments: [
+    {
+      id: 'sunset-classic',
+      name: 'Sunset Classic Open',
+      date: '2026-03-22T16:30:00',
+      course: 'TPC Dorado Beach',
+      city: 'Dorado',
+      region: 'North',
+      type: 'open',
+      fee: '$180',
+      registrationOpen: true,
+      description: 'A golden-hour 18-hole open tournament welcoming amateur and pro players. Includes post-round dinner and awards.',
+      includes: 'Green fee, cart, dinner, prizes',
+      email: 'events@doradoopen.com',
+      phone: '+1 (787) 555-0191',
+      registrationUrl: 'https://example.com/register',
+      image: 'https://images.unsplash.com/photo-1593111774240-d529f12cf4bb?auto=format&fit=crop&w=1400&q=80',
+      lat: 18.471,
+      lng: -66.266
+    },
+    {
+      id: 'charity-swing',
+      name: 'Swing for Hope Charity Cup',
+      date: '2026-04-09T09:00:00',
+      course: 'Coco Beach Golf Club',
+      city: 'Río Grande',
+      region: 'East',
+      type: 'charity',
+      fee: '$125',
+      registrationOpen: true,
+      description: 'Charity format event supporting youth sports in Puerto Rico. Four-person scramble with sponsor activations.',
+      includes: 'Breakfast, lunch, donation packet, awards',
+      email: 'charity@golfpr.org',
+      phone: '+1 (939) 555-0144',
+      registrationUrl: 'https://example.com/charity',
+      image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80',
+      lat: 18.3806,
+      lng: -65.7686
+    },
+    {
+      id: 'corporate-links',
+      name: 'Corporate Links Invitational',
+      date: '2026-05-15T08:00:00',
+      course: 'Wyndham Grand Rio Mar',
+      city: 'Río Grande',
+      region: 'East',
+      type: 'corporate',
+      fee: '$250',
+      registrationOpen: false,
+      description: 'Private invitational designed for executive networking with a premium hospitality experience.',
+      includes: 'VIP breakfast, caddie support, networking reception',
+      email: 'corporate@linksinv.com',
+      phone: '+1 (787) 555-0178',
+      registrationUrl: '',
+      image: 'https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=1400&q=80',
+      lat: 18.3845,
+      lng: -65.7596
+    },
+    {
+      id: 'island-amateur',
+      name: 'Island Amateur Championship',
+      date: '2026-06-01T07:30:00',
+      course: 'Royal Isabella',
+      city: 'Isabela',
+      region: 'West',
+      type: 'open',
+      fee: 'Free',
+      registrationOpen: true,
+      description: 'A bilingual tournament celebrating Puerto Rico amateur talent with flights for multiple handicaps.',
+      includes: 'Tournament round, range balls, awards brunch',
+      email: 'amateur@islandgolf.pr',
+      phone: '+1 (787) 555-0137',
+      registrationUrl: 'https://example.com/island-amateur',
+      image: 'https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1400&q=80',
+      lat: 18.5008,
+      lng: -67.024
+    }
+  ]
+};
