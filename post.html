@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post a Tournament | GolfPR</title>
+    <meta name="description" content="Submit your Puerto Rico golf tournament for review and publication on GolfPR." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header solid">
+      <nav class="navbar container">
+        <a href="index.html" class="logo">Golf<span>PR</span></a>
+        <div class="nav-links">
+          <a href="index.html#tournaments">Tournaments</a>
+          <a href="post.html" class="active">Post a Tournament</a>
+          <a href="about.html">About</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="section container">
+      <h1>Post a Tournament</h1>
+      <p class="muted">Submit your event and our team will review it within 24 hours.</p>
+
+      <form id="tournamentForm" class="premium-form" novalidate>
+        <div class="form-grid">
+          <label class="field floating"><input required name="name" placeholder=" " /><span>Tournament Name</span></label>
+          <label class="field floating"><input required type="datetime-local" name="datetime" placeholder=" " /><span>Date & Time</span></label>
+          <label class="field floating">
+            <select name="course" required>
+              <option value="">Choose course</option>
+            </select>
+            <span>Golf Course Name</span>
+          </label>
+          <label class="field floating"><input name="customCourse" placeholder=" " /><span>Manual Course Entry (optional)</span></label>
+          <label class="field floating"><input required name="city" placeholder=" " /><span>City / Region</span></label>
+          <label class="field floating"><input name="fee" placeholder=" " /><span>Entry Fee (e.g. Free or $125)</span></label>
+          <label class="field floating full"><textarea required name="description" maxlength="500" placeholder=" "></textarea><span>Brief Description (max 500 chars)</span><small id="charCount">0 / 500</small></label>
+          <label class="field floating"><input required type="email" name="email" placeholder=" " /><span>Contact Email</span></label>
+          <label class="field floating"><input name="phone" placeholder=" " /><span>Contact Phone (optional)</span></label>
+          <label class="field floating"><input type="url" name="registration" placeholder=" " /><span>External Registration URL</span></label>
+          <label class="field full file-input">Upload Flyer / Course Photo (Max 5MB)<input type="file" name="image" accept="image/*" /></label>
+        </div>
+        <button type="submit" class="btn btn-gold">Submit Tournament</button>
+      </form>
+
+      <section class="confirmation" id="confirmation" hidden>
+        <div class="checkmark">✓</div>
+        <h2>Your tournament has been submitted for review.</h2>
+        <p>It will appear on the site within 24 hours.</p>
+      </section>
+    </main>
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/post.js"></script>
+  </body>
+</html>
